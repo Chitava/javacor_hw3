@@ -38,7 +38,7 @@ public class Worker {
 
 
     public void printinfo() {
-        System.out.printf("Сотрудник - " + getName() + ", возраст - " + getAge() + ", должность - " + getPosition() +
-                ", с зарплатой - " + getSalary() + ", телефон - " + getPhone());;
+        System.out.printf("Сотрудник - " + getName() + ", возраст - " + getAge() + " лет" + ", должность - " + getPosition() +
+                ", с зарплатой - " + getSalary() +" руб." + ", телефон - " + getPhone());;
     }
 }
