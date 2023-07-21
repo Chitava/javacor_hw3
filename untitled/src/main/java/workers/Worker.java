@@ -36,9 +36,10 @@ public class Worker {
         return age;
     }
 
-
-    public void printinfo() {
-        System.out.printf("Сотрудник - " + getName() + ", возраст - " + getAge() + " лет" + ", должность - " + getPosition() +
-                ", с зарплатой - " + getSalary() +" руб." + ", телефон - " + getPhone());;
+    @Override
+    public String toString() {
+        return "Сотрудник - " + getName() + ", возраст - " + getAge() + " лет" + ", должность - " + getPosition() +
+                ", с зарплатой - " + getSalary() +" руб." + ", телефон - " + getPhone();
     }
+
 }
