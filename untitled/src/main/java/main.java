@@ -16,9 +16,10 @@ public class main {
         workers.add(worker_3);
         workers.add(worker_4);
         workers.add(worker_5);
-        for (Worker worker: workers) {
-            System.out.println(worker.toString());
-        }
-
+//        for (Worker worker: workers) {
+//            System.out.println(worker.toString());
+//        }
+        worker_2.salaryup(30, 10000);
+        System.out.println(worker_2.toString());
     }
 }
