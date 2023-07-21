@@ -1,3 +1,4 @@
+import workers.Boss;
 import workers.Worker;
 
 import java.util.ArrayList;
@@ -10,19 +11,24 @@ public class main {
         Worker worker_3 = new Worker("Анна", "Секретарь", 345, 65000,46);
         Worker worker_4 = new Worker("Татьяна", "Бухгалтер", 456, 95000,50);
         Worker worker_5 = new Worker("Иван", "Водитель", 567, 55000,31);
+        Boss worker_6 = new Boss("Василий Николаевич", "Начальник отдела", 666, 150000,
+                59);
         ArrayList <Worker> workers= new ArrayList<>();
         workers.add(worker_1);
         workers.add(worker_2);
         workers.add(worker_3);
         workers.add(worker_4);
         workers.add(worker_5);
+        workers.add(worker_6);
 //        for (Worker worker: workers) {
 //            System.out.println(worker.toString());
 //        }
 //        worker_2.salaryup(30, 10000);
 //        System.out.println(worker_2.toString());
 //        Worker.upsalaryall(workers);
-        Worker.averageage(workers);
-        Worker.averagealary(workers);
+//        Worker.averageage(workers);
+//        Worker.averagealary(workers);
+        Boss.upsalaryall(workers);
+
     }
 }
