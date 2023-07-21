@@ -21,7 +21,7 @@ public class main {
 //        }
 //        worker_2.salaryup(30, 10000);
 //        System.out.println(worker_2.toString());
-        Worker.upsalaryall(workers);
-
+//        Worker.upsalaryall(workers);
+        Worker.averageage(workers);
     }
 }
