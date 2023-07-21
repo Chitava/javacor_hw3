@@ -71,11 +71,22 @@ public class Worker {
             age = age + worker.getAge();
         }
         averAge = age / count;
-        System.out.printf("Средний возраст сотрудников в компании - " + averAge);
+        System.out.printf("Средний возраст сотрудников в компании - " + averAge + "\n");
 
     }
 
+    public static void averagealary (ArrayList<Worker> workers){
+        float averSalary = 0;
+        int count = 0;
+        float allSalary = 0;
+        for (Worker worker: workers) {
+            count++;
+            allSalary = allSalary + worker.getSalary();
+        }
+        averSalary = allSalary / count;
+        System.out.printf("Средняя зарплата в компании - " + averSalary + "\n");
 
+    }
 
     public void salaryup(int age, float salary){
         if (this.getAge() > age){

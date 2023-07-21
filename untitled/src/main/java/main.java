@@ -23,5 +23,6 @@ public class main {
 //        System.out.println(worker_2.toString());
 //        Worker.upsalaryall(workers);
         Worker.averageage(workers);
+        Worker.averagealary(workers);
     }
 }
