@@ -1,5 +1,7 @@
 package workers;
 
+import java.util.ArrayList;
+
 public class Worker {
     public String name;
     public String position;
@@ -48,6 +50,17 @@ public class Worker {
         this.age = age;
     }
 
+    public static void upsalaryall (ArrayList<Worker> workers){
+        for (Worker worker: workers) {
+            if (worker.getAge() > 45){
+                worker.setSalary(worker.getSalary() + 5000);
+                System.out.println(worker.getPosition()+ " " + worker.getName() + " получил прибавку, теперь у него зарплата" +
+                        " - " + worker.getSalary());
+            }else {
+                System.out.printf(worker.getPosition()+ " " + worker.getName() + " не достиг возраста повышения зарпалаты.\n");
+            }
+        }
+    }
     public void salaryup(int age, float salary){
         if (this.getAge() > age){
             setSalary(this.salary + salary);
